@@ -12,10 +12,20 @@ int main ()
     printf("Ingrese la edad de la persona: ");
     scanf("%d", &ed);
 
+<<<<<<< HEAD
     if(ed > 100)
     {
         printf("Esa edad no existe");
     }else if (ed >=65)
+=======
+    if(ed <= 0)
+    {
+        printf("No ingrese edades negativas o cero");
+    }else if(ed > 100)
+    {
+        printf("Esa edad no existe");
+    }else if (ed >= 65)
+>>>>>>> rama_Adicional
     {
         printf("La persona es un Adulto Mayor");
     }else if(ed >= 18)
