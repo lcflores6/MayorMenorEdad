@@ -12,7 +12,16 @@ int main ()
     printf("Ingrese la edad de la persona: ");
     scanf("%d", &ed);
 
-    if(ed >= 18)
+    if(ed <= 0)
+    {
+        printf("No ingrese edades negativas o cero");
+    }else if(ed > 100)
+    {
+        printf("Esa edad no existe");
+    }else if (ed >= 65)
+    {
+        printf("La persona es un Adulto Mayor");
+    }else if(ed >= 18)
     {
         printf("La persona es Mayor de edad");
     }else
